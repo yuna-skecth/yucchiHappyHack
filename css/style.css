@@ -1,0 +1,354 @@
+/*
+青
+color: #3D5CDB;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+  font-family: "Futurabold";
+  src: url(fonts/Futura-Med.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "FuturaExbold";
+  src: url(Futura-Bol.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Futuranormal";
+  src: url(fonts/Futura-Boo.ttf) format("truetype");
+}
+
+/*
+@font-face {
+  font-family: "Futura";
+  src: url(fonts/Futura-LigObl.ttf) format("truetype");
+}
+*/
+
+
+header{
+    width: 100%;
+    height: 100vh;
+/*    height: 800px;*/
+/*    background: red;*/
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;   
+}
+
+
+ul{
+    width: 650px;
+    overflow: hidden;
+/*    background: red;*/
+    float: right;
+}
+
+
+nav li{
+    float: left;
+    margin-right: 30px;
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.5s;
+    color: white;
+    font-family: "Futurabold";
+    
+}
+
+nav a:hover{
+    color:#3D5CDB;
+    font-size: 
+}
+
+
+
+header img{
+    width: 900px;
+}
+
+.textbox{
+    width: 900px;
+    text-align: center;
+    overflow: hidden;
+/*    background: red;*/
+    margin: 0 auto;
+    padding-top: 157px;   
+}
+
+.textbox p{
+    padding-top: 42px;
+    color: white;
+    font-size: 50px;
+    font-family: "Futurabold";
+    font-style: italic;
+    
+}
+
+#intro-section{
+    width: 100%;
+/*    background: #FCEEED;*/
+    overflow: hidden;
+}
+
+h2{
+    text-align: center;
+    font-size:44pt;
+    padding: 40px;
+    color: #3D5CDB;
+    font-family:  "Futurabold";
+    letter-spacing: 1px;
+/*    font-weight: bold;*/
+/*    background: green;*/
+}
+
+.intro-upperbox{
+    width: 1040px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+/*    background: red;*/
+    margin:0 auto;
+    margin-top: 20px;
+
+}
+
+
+#intro-section img{
+    width: 500px;
+
+   
+}
+
+#intro-section p{
+    color:black;
+    line-height: 32px;
+
+}
+
+.right-box{
+    width: 400px;
+    overflow: hidden; 
+    padding-right: 50px;
+    
+}
+
+.ibutton{
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 30px;    
+}
+
+.ibutton:hover{
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .3);
+}
+
+
+.intro-upperbox a{
+     background-color: #3D5CDB;
+     font-size: 20px;
+}
+
+.intro-bottombox{
+    width: 1040px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+/*    background: green;*/
+    margin-top: 90px;
+    margin-bottom: 75px;
+    
+}
+
+.left-box{
+    width: 400px;
+    overflow: hidden;  
+    padding-left: 50px;
+}
+
+.intro-bottombox a{
+     background-color:#ffbf00;
+     font-size: 20px;
+}
+
+#course-section{
+    background: #d5f7f7;
+    overflow: hidden;
+}
+
+.course-upperbox{
+    width: 1020px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+/*    background: blue;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.article{
+    height: 340px;
+    width: 240px;
+    background: white;
+/*    text-align: center;*/
+    border-radius: 15px;
+/*    float: left;*/
+    position: relative;
+}
+
+.article img{
+    width:100px;
+/*    margin-top: 35px;*/
+    position: absolute;
+    left: 70px;
+    top: 35px;
+
+}
+
+#unity img{
+    padding-top: 24px;
+}
+
+#ruby img{
+    padding-top: 24px;
+}
+
+.article p{
+/*    background: red;*/
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    width: 160px;
+    color: #333333;
+/*    このへんただ計算しただけ、合ってる？*/
+    left: 40px;
+    top: 210px;
+    font-weight: bold;
+}
+
+.article a{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cbutton{
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    position: relative;
+    top: 255px;
+}
+
+.cbutton:hover{
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .3);
+}
+
+
+#html a{
+    background: #F16529;
+}
+
+#css a{
+    background: #29A9DF;
+}
+
+#unity a{
+    background: #333333;
+}
+
+#ruby a{
+    background: #FF5252;
+}
+
+.course-bottombox{
+    width: 760px;
+    margin: 0 auto;
+/*    background: pink;*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#swift img{
+    padding-top: 30px;
+}
+
+#go img{
+    padding-top: 24px;
+}
+
+
+#java a{
+    background: #FED700;
+}
+
+#swift a{
+    background: #FE7536;
+}
+
+#go a{
+    background: #73CEDD;
+}
+
+#image-section{
+    width: 100%;
+    overflow: hidden;
+    background: pink;
+}
+
+#access-section{
+    width: 100%;
+    overflow: hidden;
+/*    background: lightgreen;*/
+}
+
+.multiple-items img{
+    width:400px;
+}
+
+.map{
+    width: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 46px;
+}
+
+footer{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+footer p{
+    line-height: 60px;
+    font-size: 14px;
+    font-family: "FuturaExbold";
+    font-weight: bold;
+    color: #3D5CDB;
+}
