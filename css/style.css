@@ -91,13 +91,39 @@ header nav a:hover{
     
 }
 
+@media screen and (max-width:480px){
+/*    ここにスマホ版のCSSを書いていくよ*/
+
+    nav{
+        display: none;
+    }
+    
+    .textbox img{
+        width: 270px;
+    }
+    
+    .textbox p{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
 #intro-section{
     width: 100%;
 /*    background: #FCEEED;*/
     overflow: hidden;
-}
-#intro-section p{
-   
 }
 
 h2{
@@ -131,7 +157,6 @@ h2{
     width: 500px;
     height: 335px;
 }
-
 
 #intro-section p{
     color:black;
@@ -178,9 +203,7 @@ h2{
     margin:0 auto;
 /*    background: green;*/
     margin-top: 90px;
-    margin-bottom: 75px;
-    
-    
+    margin-bottom: 75px;   
 }
 
 .left-box{
@@ -194,6 +217,90 @@ h2{
      font-size: 20px;
 }
 
+.intro-bottombox{
+    width: 1040px;
+/*    overflow: hidden;*/
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+/*    background: green;*/
+    margin-top: 90px;
+    margin-bottom: 75px;   
+}
+
+.left-box{
+    width: 400px;
+/*    overflow: hidden;  */
+    padding-left: 50px;
+}
+
+.intro-bottombox a{
+     background-color:#ffbf00;
+     font-size: 20px;
+}
+
+/*イントロセクションのレスポンシブ*/
+@media screen and (max-width:480px){
+    h2{
+    font-size:25pt;
+    padding: 30px;
+    }
+    
+    #intro-section img{
+    width: 370px;
+    height: 260px;
+    margin: 0 auto;
+    }
+    
+    #intro-section p{
+    font-size: 13.5px;
+    line-height: 1.9em;
+    }
+
+    .intro-upperbox{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .right-box{
+        width: 80%;
+        overflow: hidden;
+        margin: 0 auto;
+        padding-right: 0px;
+        margin-top: 50px;
+}    
+    
+    .intro-bottombox{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .intro-bottombox img{
+        order: 1;
+    }
+    
+    .left-box{
+        width: 80%;
+        overflow: hidden;
+        margin: 0 auto;
+        padding-left:0px;
+        order: 2;
+        margin-top: 50px; 
+}    
+    #intro-section a{
+        font-size: 17px;
+    }
+    
+ 
+
+    
+}
+
+#course-section{
+    overflow: hidden;
+    position: relative;
+}
+
 #course-section h2{
 /*    background: blue;*/
     position: relative;
@@ -201,16 +308,9 @@ h2{
     margin: 0 auto;
 }
 
-#course-section{
-    background: lightblue;
-    overflow: hidden;
-    position: relative;
-}
-
 #course-section p{
    font-family:  Helvetica Neue;
 }
-
 
 #particles-js{
   width: 100%;
@@ -226,10 +326,9 @@ position: absolute;
 　left: 0;
 　right: 0;
 　bottom: 0;
-　display: block;
+/*　display: block;*/
 　z-index: 0;
 }
-
 
 .course-upperbox{
     width: 1020px;
@@ -243,7 +342,7 @@ position: absolute;
 }
 
 .article{
-    height: 340px;
+    height: 340px; 
     width: 240px;
     background: white;
 /*    text-align: center;*/
@@ -306,7 +405,6 @@ position: absolute;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .3);
 }
 
-
 #html a{
     background: #F16529;
 }
@@ -341,7 +439,6 @@ position: absolute;
     padding-top: 24px;
 }
 
-
 #java a{
     background: #FED700;
 }
@@ -354,20 +451,102 @@ position: absolute;
     background: #73CEDD;
 }
 
+/*コースセクションのレスポンシブ*/
+@media screen and (max-width:480px){
+    
+    .course-upperbox{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    
+    .article{
+        height: 245px;
+        width: 160px;   
+        border-radius: 10px;
+        margin-bottom: 33px;
+    } 
+    
+    .article img{
+        width: 40%;
+        left: 50px;
+        top: 35px;
+    }
+    
+    #unity img{
+        padding-top: 10px;
+}
+
+    #ruby img{
+        padding-top: 10px;
+    }
+
+    
+    .course-bottombox{
+        width:90%;
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+    
+    .article p{
+        left: 0px;
+        width: 170px;
+        top: 150px;
+    }
+    
+    .article a{
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 35px;
+}
+    
+    .cbutton{
+        width: 110px;
+        height: 35px;
+        border-radius: 20px;
+        top: 190px;
+    }
+    
+    .hamidashi{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    
+}
+
 #image-section{
     width: 100%;
     overflow: hidden;
 }
-
 
 .slider img{
     width:290px;
 }
 
 .slider{
-    background: red;
     width: 1160px;
     margin: 0 auto;
+}
+
+/*イメージセクションのレスポンシブ*/
+
+@media screen and (max-width:480px){
+    
+    #image-section h2{
+        padding: 50px;
+        
+    }
+    
+    .slider img{
+        width: 330px
+    }
+    
+    .slider{
+        width: 330px;
+    }
+    
 }
 
 
@@ -383,6 +562,12 @@ position: absolute;
     margin-bottom: 46px;
 }
 
+iframe{
+    width:600px;
+    height:400px;
+}
+
+
 footer{
     width: 100%;
     overflow: hidden;
@@ -396,4 +581,20 @@ footer p{
     color: #3D5CDB;
 }
 
+/*マップセクションとフッターのレスポンシブ*/
+@media screen and (max-width:480px){
+    
+    #access-section{
+        margin-top: 60px;
+    }
+    
+    iframe{
+        width: 100%;
+        height:350px;
+    }
+    
+    footer p{
+        font-size: 17px;
+    }
+}
 
